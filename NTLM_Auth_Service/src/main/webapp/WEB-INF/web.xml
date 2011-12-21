@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ValidationService</display-name>
+  <filter>
+    <filter-name>NTLM_Filter</filter-name>
+    <filter-class>jcifs.http.NtlmHttpFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>NTLM_Filter</filter-name>
+    <url-pattern>/ntlm</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>TokenServlet</servlet-name>
+    <servlet-class>com.hengtiansoft.dst.TokenEncryptServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TokenServlet</servlet-name>
+    <url-pattern>/ntlm</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Receiver</servlet-name>
+    <servlet-class>com.hengtiansoft.dst.ReceiverServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Receiver</servlet-name>
+    <url-pattern>/r</url-pattern>
+  </servlet-mapping>
+</web-app>
