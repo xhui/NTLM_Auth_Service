@@ -11,7 +11,7 @@
   </filter-mapping>
   <servlet>
     <servlet-name>TokenServlet</servlet-name>
-    <servlet-class>com.hengtiansoft.dst.TokenEncryptServlet</servlet-class>
+    <servlet-class>ex.zan.tools.auth.ntlm.TokenEncryptServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>TokenServlet</servlet-name>
@@ -19,7 +19,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>Receiver</servlet-name>
-    <servlet-class>com.hengtiansoft.dst.ReceiverServlet</servlet-class>
+    <servlet-class>ex.zan.tools.auth.ntlm.ReceiverServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Receiver</servlet-name>

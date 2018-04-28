@@ -1,4 +1,4 @@
-package com.hengtiansoft.dst;
+package ex.zan.tools.auth.ntlm;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -1,8 +1,10 @@
-package com.hengtiansoft.dst;
+package ex.zan.tools.auth.ntlm;
 
 import junit.framework.Assert;
 
 import org.junit.Test;
+
+import ex.zan.tools.auth.ntlm.Util;
 
 public class Util_Test
 {
